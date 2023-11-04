@@ -17,6 +17,10 @@ namespace DependencyServicesSample
             {
                 await Navigation.PushAsync(new BatteryDemo());
             };
+            Item2.Clicked += async (sender, e) =>
+            {
+                await Navigation.PushAsync(new QRCodeDemo());
+            };
         }
     }
 }
